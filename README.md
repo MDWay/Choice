@@ -32,7 +32,7 @@ n^4
 n^n
 ```
 In this example the function `f(n)` is defined which exports `2*n`. The function `g(n)` exports `n*n` or `n^2`, `h(n)` exports `n*n*n` or `n^3`, `i(n)` exports `n^4` and so on.
-Other commands can be found in the (not existing) operator list.
+Other commands can be found in the [operator][oplist] list.
 #### Equations
 Equations or export statements can be seperated `;`. If you want to write an export statement you than you have to replace that `;` with a `:`.
 Export statements define what is returned. You can have one export statement per function. If you have an export statment all variables or values are export as an array. Example:
@@ -64,3 +64,5 @@ g{2 n}
 2no
 ```
 First `main` calls `f` with `n=21` and exports the result. Then `f` calls `g` with `n=2` and `o=21` and exports the result. Than `g` multipies `2` with `n=2` and `o=21` resulting in `g`, `f` and `main` exporting `84`.
+
+[oplist]: ./Commands.md
